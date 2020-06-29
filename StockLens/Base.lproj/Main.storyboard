@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XhE-FS-11T">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="ViewController" customModule="Stock_Lens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="-4" width="375" height="651"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="ARp-io-7qg">
+            <objects>
+                <viewController title="Onboarding" modalPresentationStyle="fullScreen" id="XhE-FS-11T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nCo-dU-L5N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHe-au-cIm">
+                                <rect key="frame" x="87" y="50" width="201" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ez4-bP-nZ5">
+                                <rect key="frame" x="30" y="134" width="315" height="294"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stock Information" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-ZY-joN">
+                                        <rect key="frame" x="126" y="152" width="166" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stocks" translatesAutoresizingMaskIntoConstraints="NO" id="pnS-VB-7OP">
+                                        <rect key="frame" x="20" y="169" width="70" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to scan logos of companies you encounter" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nk-nE-jLf">
+                                        <rect key="frame" x="126" y="48" width="192" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXV-r1-Jgo">
+                                        <rect key="frame" x="127" y="20" width="57" height="20.333333333333343"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="Cw7-3n-dSk">
+                                        <rect key="frame" x="20" y="30" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discover the stocks of companies you scan" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfo-Fg-vKr">
+                                        <rect key="frame" x="126" y="197" width="192" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11i-Ts-Aj8">
+                                <rect key="frame" x="60" y="447" width="255" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M55-XT-tuH">
+                                        <rect key="frame" x="27.5" y="42.5" width="200" height="50"/>
+                                        <color key="backgroundColor" red="0.2048728168" green="0.46952748300000002" blue="0.96479207280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="GjD-r3-hh2"/>
+                                            <constraint firstAttribute="height" constant="50" id="izS-jX-0aF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Get Started">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" id="2RL-bj-Vdz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E9-ml-Ju8">
+                                        <rect key="frame" x="67" y="108.5" width="121" height="30"/>
+                                        <state key="normal" title="About Stock Lens"/>
+                                        <connections>
+                                            <segue destination="zPb-uq-PKP" kind="presentation" id="bOV-TK-7AT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="M55-XT-tuH" firstAttribute="centerX" secondItem="11i-Ts-Aj8" secondAttribute="centerX" id="AKH-Og-6qg"/>
+                                    <constraint firstAttribute="width" secondItem="11i-Ts-Aj8" secondAttribute="height" multiplier="17:9" id="TUp-Gx-rTq"/>
+                                    <constraint firstAttribute="trailing" secondItem="6E9-ml-Ju8" secondAttribute="trailing" constant="67" id="W2u-UT-DEV"/>
+                                    <constraint firstItem="M55-XT-tuH" firstAttribute="centerY" secondItem="11i-Ts-Aj8" secondAttribute="centerY" id="Yge-II-QCO"/>
+                                    <constraint firstItem="6E9-ml-Ju8" firstAttribute="top" secondItem="M55-XT-tuH" secondAttribute="bottom" constant="16" id="hMg-hN-8mF"/>
+                                    <constraint firstItem="6E9-ml-Ju8" firstAttribute="leading" secondItem="11i-Ts-Aj8" secondAttribute="leading" constant="67" id="rKg-Zl-nur"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="11i-Ts-Aj8" firstAttribute="leading" secondItem="Abz-pV-VlN" secondAttribute="leading" constant="60" id="2zQ-8e-LQ2"/>
+                            <constraint firstItem="11i-Ts-Aj8" firstAttribute="centerX" secondItem="Abz-pV-VlN" secondAttribute="centerX" id="3jF-Gb-FoL"/>
+                            <constraint firstItem="11i-Ts-Aj8" firstAttribute="top" secondItem="Ez4-bP-nZ5" secondAttribute="bottom" constant="19" id="B7j-dD-Lz8"/>
+                            <constraint firstItem="Abz-pV-VlN" firstAttribute="trailing" secondItem="11i-Ts-Aj8" secondAttribute="trailing" constant="60" id="CTx-82-iFc"/>
+                            <constraint firstItem="11i-Ts-Aj8" firstAttribute="centerX" secondItem="Abz-pV-VlN" secondAttribute="centerX" id="Yha-XO-ARo"/>
+                            <constraint firstItem="Abz-pV-VlN" firstAttribute="trailing" secondItem="Ez4-bP-nZ5" secondAttribute="trailing" constant="30" id="kg5-nL-mdw"/>
+                            <constraint firstItem="Ez4-bP-nZ5" firstAttribute="leading" secondItem="Abz-pV-VlN" secondAttribute="leading" constant="30" id="m0S-dQ-qdo"/>
+                            <constraint firstItem="Ez4-bP-nZ5" firstAttribute="top" secondItem="mHe-au-cIm" secondAttribute="bottom" constant="30" id="tAb-fV-F1A"/>
+                            <constraint firstItem="mHe-au-cIm" firstAttribute="centerX" secondItem="nCo-dU-L5N" secondAttribute="centerX" id="vmB-FN-JA8"/>
+                            <constraint firstItem="Abz-pV-VlN" firstAttribute="bottom" secondItem="11i-Ts-Aj8" secondAttribute="bottom" constant="85" id="xDK-oV-ODc"/>
+                            <constraint firstItem="mHe-au-cIm" firstAttribute="top" secondItem="Abz-pV-VlN" secondAttribute="top" constant="50" id="z0v-ru-YBG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Abz-pV-VlN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wlk-Ix-n8v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPv-qU-4c5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-605.60000000000002" y="116.49175412293854"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PBz-NV-x8v">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="zPb-uq-PKP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y4s-iH-CY7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3C-Dq-6B3">
+                                <rect key="frame" x="40" y="232" width="295" height="30"/>
+                                <state key="normal" title="Back to Stock Lens"/>
+                                <connections>
+                                    <segue destination="XhE-FS-11T" kind="presentation" id="0jK-kY-4H3"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUH-a7-nwY">
+                                <rect key="frame" x="40" y="49" width="295" height="157"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Stock Lens was designed to provide financial information about companies people interact with everyday in order to empower them to smartly invest their money. Stock Lens was created by Anirudh Naidu and Gabriel Kay in 2019. You can reach us at StockLensApp@gmail.com.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES" address="YES" lookupSuggestion="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nUH-a7-nwY" firstAttribute="centerX" secondItem="Y4s-iH-CY7" secondAttribute="centerX" id="2op-Cu-5CU"/>
+                            <constraint firstItem="V3C-Dq-6B3" firstAttribute="leading" secondItem="Uaz-X6-lfQ" secondAttribute="leading" constant="40" id="DiS-eK-lGT"/>
+                            <constraint firstItem="Uaz-X6-lfQ" firstAttribute="trailing" secondItem="nUH-a7-nwY" secondAttribute="trailing" constant="40" id="Jl8-mP-vdx"/>
+                            <constraint firstItem="Uaz-X6-lfQ" firstAttribute="bottom" secondItem="V3C-Dq-6B3" secondAttribute="bottom" constant="405" id="LTY-yI-nZU"/>
+                            <constraint firstItem="V3C-Dq-6B3" firstAttribute="top" secondItem="nUH-a7-nwY" secondAttribute="bottom" constant="26" id="Urf-hm-0xX"/>
+                            <constraint firstItem="Uaz-X6-lfQ" firstAttribute="trailing" secondItem="V3C-Dq-6B3" secondAttribute="trailing" constant="40" id="WCR-Mw-Yta"/>
+                            <constraint firstItem="nUH-a7-nwY" firstAttribute="leading" secondItem="Uaz-X6-lfQ" secondAttribute="leading" constant="40" id="g37-Tw-JFJ"/>
+                            <constraint firstItem="V3C-Dq-6B3" firstAttribute="centerX" secondItem="nUH-a7-nwY" secondAttribute="centerX" id="pq1-6R-f9U"/>
+                            <constraint firstItem="nUH-a7-nwY" firstAttribute="centerX" secondItem="Y4s-iH-CY7" secondAttribute="centerX" id="vuE-zQ-YE2"/>
+                            <constraint firstItem="nUH-a7-nwY" firstAttribute="top" secondItem="Uaz-X6-lfQ" secondAttribute="top" constant="49" id="w2O-oF-uWP"/>
+                            <constraint firstItem="nUH-a7-nwY" firstAttribute="centerX" secondItem="Uaz-X6-lfQ" secondAttribute="centerX" id="x0x-TB-k9o"/>
+                            <constraint firstItem="V3C-Dq-6B3" firstAttribute="centerX" secondItem="Uaz-X6-lfQ" secondAttribute="centerX" id="yI8-Ej-7XN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uaz-X6-lfQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ai6-Gr-0J3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="815.44227886056979"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="100" height="100"/>
+        <image name="stocks" width="100" height="100"/>
+    </resources>
+</document>

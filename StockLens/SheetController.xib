@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SheetController" customModule="StockLens" customModuleProvider="target">
+            <connections>
+                <outlet property="changeLabel" destination="PCh-18-VAe" id="Q2x-Bs-Eef"/>
+                <outlet property="companyLabel" destination="2Mr-MD-FGR" id="1X0-VM-yXe"/>
+                <outlet property="priceLabel" destination="uZl-e2-983" id="6Hi-BL-umg"/>
+                <outlet property="searchButton" destination="HrS-s3-ydQ" id="iQI-nh-ENB"/>
+                <outlet property="tickerLabel" destination="wM1-3m-xOF" id="wwU-LK-KyX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Ty4-b6-liG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TICKERVAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wM1-3m-xOF">
+                    <rect key="frame" x="50" y="107" width="119.5" height="27.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICEVAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZl-e2-983">
+                    <rect key="frame" x="50" y="149.5" width="105" height="27.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPANYVAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mr-MD-FGR">
+                    <rect key="frame" x="50" y="44" width="270" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANGEVAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCh-18-VAe">
+                    <rect key="frame" x="170" y="149.5" width="136" height="27.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrS-s3-ydQ">
+                    <rect key="frame" x="437" y="207" width="150" height="50"/>
+                    <color key="backgroundColor" red="0.2048728168" green="0.46952748300000002" blue="0.96479207280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" button="YES" causesPageTurn="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ZfU-N9-4uR"/>
+                        <constraint firstAttribute="width" constant="150" id="hRC-W9-mmk"/>
+                    </constraints>
+                    <state key="normal" title="Search the Web">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="searchWeb:" destination="-1" eventType="touchUpInside" id="yeY-tf-7hZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PCh-18-VAe" firstAttribute="leading" secondItem="uZl-e2-983" secondAttribute="trailing" constant="15" id="7h6-l3-zvb"/>
+                <constraint firstItem="uZl-e2-983" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="HqQ-Pv-dwl"/>
+                <constraint firstItem="PCh-18-VAe" firstAttribute="top" secondItem="wM1-3m-xOF" secondAttribute="bottom" constant="15" id="Jgp-4Q-Ev9"/>
+                <constraint firstItem="wM1-3m-xOF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="N0d-VM-3qr"/>
+                <constraint firstItem="uZl-e2-983" firstAttribute="top" secondItem="wM1-3m-xOF" secondAttribute="bottom" constant="15" id="OgD-KP-YFk"/>
+                <constraint firstItem="2Mr-MD-FGR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="20" id="TOX-9W-iqr"/>
+                <constraint firstItem="HrS-s3-ydQ" firstAttribute="top" secondItem="PCh-18-VAe" secondAttribute="bottom" constant="30" id="XUO-Bu-k2X"/>
+                <constraint firstItem="2Mr-MD-FGR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="dcT-f5-IKY"/>
+                <constraint firstItem="HrS-s3-ydQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jSs-oZ-Yiz"/>
+                <constraint firstItem="wM1-3m-xOF" firstAttribute="top" secondItem="2Mr-MD-FGR" secondAttribute="bottom" constant="15" id="rEa-DA-H1g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="210.1449275362319" y="-12.723214285714285"/>
+        </view>
+    </objects>
+</document>

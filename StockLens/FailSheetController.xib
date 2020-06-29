@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FailSheetController" customModule="StockLens" customModuleProvider="target">
+            <connections>
+                <outlet property="companyLabel" destination="pYv-Sb-VoC" id="6NG-NV-fGF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPANYNAME" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYv-Sb-VoC">
+                    <rect key="frame" x="54" y="64" width="306.5" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try scanning a public company to get up to date stock information." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0U-Mi-h50">
+                    <rect key="frame" x="20" y="132" width="374" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Y0U-Mi-h50" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="B2f-TS-22F"/>
+                <constraint firstItem="Y0U-Mi-h50" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fpx-uv-UIH"/>
+                <constraint firstItem="Y0U-Mi-h50" firstAttribute="top" secondItem="pYv-Sb-VoC" secondAttribute="bottom" constant="20" id="SLl-Nu-0hv"/>
+                <constraint firstAttribute="trailing" secondItem="Y0U-Mi-h50" secondAttribute="trailing" constant="20" id="bHi-m5-LCy"/>
+                <constraint firstItem="pYv-Sb-VoC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hJK-SJ-GpG"/>
+                <constraint firstItem="pYv-Sb-VoC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="qh9-DO-tS4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.80000000000001" y="93.103448275862078"/>
+        </view>
+    </objects>
+</document>
